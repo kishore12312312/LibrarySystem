@@ -30,6 +30,6 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(build.artifactStagingDirectory)'
+    targetPath: '$(Pipeline.Workspace)'
     artifact: 'LibrarySystem'
     publishLocation: 'pipeline'
